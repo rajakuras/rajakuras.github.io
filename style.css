@@ -1190,4 +1190,228 @@ footer {
     .policy-content h2 {
         font-size: 1.3rem;
     }
+}
+
+/* Price List Section Styles */
+.price-list {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.price-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.price-list h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.price-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.price-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.price-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+.price-card.featured {
+    border: 2px solid #4CAF50;
+    position: relative;
+}
+
+.price-card.featured::before {
+    content: "Populer";
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.price-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price-header i {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.price-header h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.price-details {
+    margin: 20px 0;
+}
+
+.price-details h3 {
+    color: #444;
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.price-details .price {
+    color: #4CAF50;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.price-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.price-features li {
+    margin: 10px 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.price-features li i {
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+.price-notes {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.price-notes h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price-notes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-notes li {
+    margin: 10px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+.cta-section h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-cta {
+    background: #25D366;
+    color: white;
+}
+
+.phone-cta {
+    background: #4CAF50;
+    color: white;
+}
+
+.cta-button i {
+    margin-right: 10px;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .price-list {
+        padding: 40px 15px;
+    }
+
+    .price-list h1 {
+        font-size: 2em;
+    }
+
+    .price-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card {
+        padding: 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.6em;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
 } 
